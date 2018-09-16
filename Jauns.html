@@ -8,7 +8,14 @@
     <title>Document</title>
 </head>
 <body>
-
-nfjksnlc.gl
+<form action="index.php" method="post">
+    <input type="text" name="sname"/>
+    <input type="password" name="ssurname"/>
+    <input type="submit" name="register" value="Registreties"/>
+</form>
+<?php
+    if(isset($_POST['register'])){
+    echo"Jusu epasts:{$_POST['sname']} <br/>";
+    echo"Jusu parole: ".$_POST['ssurname']."<br/>";
 </body>
 </html>
